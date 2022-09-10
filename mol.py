@@ -26,7 +26,7 @@ def main():
             # On dit que la valeur est pas bonne et on la remet à sa valeur par défaut
             print("Nombre incorrect, réessayer.")
             nb_c = False
-            pass
+            continue
 
         radical = prefixe[nb_c] + suffixe[0]
         print(f"Radical : {radical}")
@@ -42,7 +42,7 @@ def main():
         if r_rami < 0 or r_rami > nb_c:
             print("Nombre incorrect, réessayer.")
             r_rami = False
-            pass
+            continue
 
         # On récupère le nombre de C dans la ramification si besoin
 
@@ -56,7 +56,7 @@ def main():
             if nb_rami < 1:
                 print("Nombre incorrect, réessayer.")
                 nb_rami = False
-                pass
+                continue
 
         # On calcule
         
@@ -69,7 +69,7 @@ def main():
 
         else:
             print("Erreur")
-            pass
+            continue
 
         # On récupère le rang du groupe caractéristique
 
@@ -81,7 +81,7 @@ def main():
         if r_gc < 0 or r_gc > nb_c:
             print("Nombre incorrect, réessayer.")
             r_gc = False
-            pass
+            continue
 
         elif r_gc == 1:
             if ui == False:
@@ -92,7 +92,7 @@ def main():
             if ui not in [1, 2]:
                 print("Erreur")
                 ui == False
-                pass
+                continue
             
             # j'ai juste supprimé un arrêt de la boucle inutile ici
 
@@ -121,7 +121,7 @@ def main():
 
         if choix not in [1, 2, 3, 4]:
             print("Choix incorrect")
-            pass
+            continue
 
         elif choix == (1 or 2 or 3):
 
